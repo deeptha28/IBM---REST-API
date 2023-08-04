@@ -1,0 +1,19 @@
+<p>Given below is the list of products</p>
+<table border="1">
+    <thead>
+    <tr>
+    <th>Product Id</th>
+    <th>Product Name</th>
+    <th>Product Price</th>
+    <th>Availability</th>
+    </tr> 
+    </thead>
+    <tbody>
+    <tr *ngFor="let tempProduct of productList">
+    <td>{{ tempProduct.productId }}</td>
+    <td>{{ tempProduct.productName }}</td>
+    <td>{{ tempProduct.productPrice }}</td>
+    <td>{{ tempProduct.isAvailable }}</td>
+    </tr>
+    </tbody>
+   </table>
